@@ -1,0 +1,62 @@
+% --Plantilla de latex para artículos
+% --Autor Lautaro Barba
+
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\graphicspath{{img/}}
+
+% --Encabezado y pie de página
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{Título del Articulo}
+\renewcommand{\headrulewidth}{0.5pt}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\footrulewidth}{0pt}
+
+% --Completar
+\title{Título}
+\author{Lautaro Barba}
+\date{99 de Enero de 9999}
+
+\begin{document}
+
+% --Portada
+\begin{titlepage}
+\centering{}
+    \includegraphics[width=0.2\textwidth]{LogoCompleto}\par
+    \vspace{1cm}
+    \textsc{\LARGE{Universidad Nacional de Tierra del Fuego}}\par
+    \vspace{1cm}
+    \textsc{\Large{Artículo}}\par
+    \vspace{1,5cm}
+    \huge{\textbf{Título del artículo}}\par
+    \vspace{2cm}
+    \Large{\textit{Lautaro Barba}}\par
+    \vfill{}
+    \large{Fecha}\par
+\end{titlepage}
+\clearpage{}
+
+% --Título
+\maketitle{}
+\clearpage{}
+
+% --Índice
+\tableofcontents{}
+\clearpage{}
+
+% --Documento
+\section{}
+
+\end{document}
+% --Dews!
