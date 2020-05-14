@@ -7,6 +7,9 @@ src/db.sqlite3
 # Archivos python compilados
 *.pyc
 
+# Python cache
+weblibreria/__pychache__
+
 # Archivos para compilación de Latex
 documents/TheEyeOfMinds.aux
 documents/TheEyeOfMinds.log
