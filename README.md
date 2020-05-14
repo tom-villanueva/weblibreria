@@ -1,4 +1,4 @@
-# weblibreria
+﻿# weblibreria
 
 #Ejecutar
 Después de clonar el repositorio tenemos que entrar al directorio raiz y crear un entorno virtual. Finalmente instalar los requerimientos.
@@ -7,7 +7,7 @@ Después de clonar el repositorio tenemos que entrar al directorio raiz y crear 
 $ git clone https://github.com/tom-villanueva/weblibreria.git
 $ cd weblibreria
 $ python3 -m virtualenv venv
-$ source venv/bin/activate
+$ source venv/bin/activate //en windows: venv\Scripts\activate.bat
 (venv) $ pip install -r requerimientos.txt
 (venv) $ #Actualizar pip si es necesario con:
 (venv) $ python3 -m pip install --upgrade pip
