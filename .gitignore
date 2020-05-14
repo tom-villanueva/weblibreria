@@ -1,1 +1,18 @@
+# Entorno virtual
 venv
+
+# Base de datos
+src/db.sqlite3
+
+# Archivos python compilados
+*.pyc
+
+# Python cache
+weblibreria/__pychache__
+
+# Archivos para compilación de Latex
+documents/TheEyeOfMinds.aux
+documents/TheEyeOfMinds.log
+documents/TheEyeOfMinds.out
+documents/TheEyeOfMinds.synctex.gz
+documents/TheEyeOfMinds.toc
