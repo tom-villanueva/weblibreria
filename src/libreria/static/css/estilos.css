@@ -1,14 +1,19 @@
-/*
 body {
-    height: 100%!important;
-    background-repeat: no-repeat;
-    font-family: 'Noto Sans JP', sans-serif;
-    background-image: linear-gradient(to bottom right, #181920, #2346A0);
-    background-size: contain;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-image: linear-gradient(to bottom right, #181920, #2346A0);
+  background-size: contain;
 }
 
 nav{
-    height: 80px;
+  height: 4rem;
+}
+
+.img-logo {
+  position: relative;
+  bottom: 2px;
+  width: 70px;
 }
 
 .text-justify {
@@ -40,15 +45,7 @@ nav{
     box-shadow: 0px 0px 10px 0px #000;
 }
 
-.logo-navbar{
-    margin: 20px 5%;
-    text-align: center;
-}
 
-.logo-image{
-    width: 150px;
-    height: 100px;
-}
 
 .logo{
     padding: 30px;
@@ -69,7 +66,7 @@ nav{
 }
 
 /* media queries */
-
+/*
 @media (max-width: 575.98px) { 
     .logo-image{
         width: 70px;

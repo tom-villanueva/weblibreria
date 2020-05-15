@@ -22,15 +22,15 @@
   <!-- Título de la página -->
   <title>The Eye of Minds - {% block title %}Home{% endblock title %}</title>
 </head>
-<body>
+<body class="container-fluid p-0">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-color1">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-color1 p-0">
       
-      <!-- Logo ->
-      <div class="justify-content-center">
-        <a href="{% url 'home' %}" class="navbar-brand">
-          <img src="{% static 'img/LogoCabeza.png' %}" class="logo-image">
-          <img src="{% static 'img/LogoTexto.png' %}" class="logo-image">
+      <!-- Logo -->
+      <div class="col-4 justify-content-center h-100">
+        <a href="{% url 'home' %}" class="navbar-brand"  id="logo">
+          <img src="{% static 'img/LogoCabeza.png' %}" class="img-logo">
+          <img src="{% static 'img/LogoTexto.png' %}" class="img-logo">
         </a>
       </div><!-- fin Logo -->
       
@@ -40,7 +40,7 @@
       </button><!-- fin Botón cuando se achica la pantalla -->
     
       <!-- Menú de navbar -->
-      <div class="collapse navbar-collapse" id="navbarMenu">
+      <div class="col-8 collapse navbar-collapse" id="navbarMenu">
 
         <!-- Búsqueda -->
         <div>
