@@ -43,46 +43,53 @@
       <div class="col-8 collapse navbar-collapse" id="navbarMenu">
 
         <!-- Búsqueda -->
-        <div>
+        <div clas="col-4 mx-auto">
           <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">  
             <button class="btn btn-secondary my-2 my-sm-0" type="submit">
               <span class="fa fa-search"></span>
-            </button>    
+            </button>
           </form>
         </div><!-- fin Búsqueda -->
 
+        <!-- Parte derecha navbar -->
+        <div class="ml-auto">
+          <ul class="navbar-nav">
 
-            <div class="ml-auto">
-                <ul class="navbar-nav">
-                    <li class = "nav-item">
-                        <a class="nav-link" href="{% url 'home' %}">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="generoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Generos
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="generoDropdown">
-                        <a class="dropdown-item" href="#">Ciencia Ficcion</a>
-                        <a class="dropdown-item" href="#">Aventura</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                    <li class = "nav-item">
-                        <a class="nav-link" href="#"> 
-                            <span class="fa fa-shopping-cart fa-lg"></span>
-                        </a>
-                    </li>
-                    <li class = "nav-item">
-                        <a class="nav-link" href="#">Iniciar sesion</a>
-                    </li>
-                    <li class = "nav-item">
-                        <a class="nav-link" href="#">Registrarse</a>
-                    </li>
-                </ul>
-            </div>
-        </div><!-- fin de los links colapsables-->
-        </nav><!-- fin primer barra de navegacion-->
+            <!-- Botón Inicio -->
+            <li class = "nav-item">
+              <a class="nav-link" href="{% url 'home' %}">Inicio</a>
+            </li>
+
+            <!-- Botón Generos -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="generoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Generos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="generoDropdown">
+                <a class="dropdown-item" href="#">Ciencia Ficcion</a>
+                <a class="dropdown-item" href="#">Aventura</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+
+            <li class = "nav-item">
+                <a class="nav-link" href="#"> 
+                    <span class="fa fa-shopping-cart fa-lg"></span>
+                </a>
+            </li>
+
+            <li class = "nav-item">
+                <a class="nav-link" href="#">Iniciar sesion</a>
+            </li>
+
+            <li class = "nav-item">
+                <a class="nav-link" href="#">Registrarse</a>
+            </li>
+          </ul>
+        </div>
+      </div><!-- fin de los links colapsables-->
+    </nav><!-- fin primer barra de navegacion-->
 
     {% block content %}
     {% endblock content %}

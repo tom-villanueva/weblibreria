@@ -31,11 +31,27 @@ nav{
 }
 
 .color1{
-    color: #E0E0E0;
+    color: hsla(0, 0%, 88%, 1);
+}
+
+.color2{
+  color: hsla(223, 64%, 38%, 1);
+}
+
+.color3{
+  color: hsla(233, 14%, 11%, 1);
 }
 
 .bg-color1{
-    background-color: #E0E0E0;
+    background-color: hsla(0, 0%, 88%, 1);
+}
+
+.bg-color2{
+  background-color: hsla(0, 0%, 50%, 1);
+}
+
+.bg-color3{
+  background-color: hsla(0, 0%, 10%, 1);
 }
 
 .formulario{
