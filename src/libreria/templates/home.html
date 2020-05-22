@@ -8,12 +8,12 @@
         <div class = "row">
             <div class = "col-12">
                 <h1 class="color1 text-center">Ofertas</h1>
-            </div>  
+            </div>
         </div>
     </div><!--Spacer para ofertas -->
 
     <div id="carouselOfertas" class="carousel slide" data-ride="carousel">
-       
+
         <ol class="carousel-indicators">
           <li data-target="#carouselOfertas" data-slide-to="0" class="active"></li>
           <li data-target="#carouselOfertas" data-slide-to="1"></li>
@@ -36,6 +36,50 @@
         </a>
     </div><!-- fin carousel ofertas -->
 
+    <!--Spacer para productos destacados -->
+    <div class = "container my-5">
+        <div class = "row">
+            <div class = "col-12">
+                <h2 class="color1 text-center">Productos Destacados</h2>
+            </div>
+        </div>
+    </div><!--Spacer para productos destacados -->
 
+    <!--Carousel Wrapper-->
+    <div id="categoriaDestacada" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+        <!--Controls-->
+        <div class="controls-top">
+            <a class="btn-floating" href="#categoriaDestacada" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+            <a class="btn-floating" href="#categoriaDestacada" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+        </div>
+        <!--/.Controls-->
+
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#categoriaDestacada" data-slide-to="0" class="active"></li>
+            <li data-target="#categoriaDestacada" data-slide-to="1"></li>
+        </ol>
+        <!--/.Indicators-->
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <!--First slide-->
+            <div class="carousel-item active">
+                {% include 'card-libro.html' with imagen='img/mazerunner1.jpg' titulo='Titulo 1' sinopsis='Nulla vitae elit libero, a pharetra augue mollis interdum.' %}
+                {% include 'card-libro.html' with imagen='img/mazerunner1.jpg' titulo='Titulo 1' sinopsis='Nulla vitae elit libero, a pharetra augue mollis interdum.' %}
+                {% include 'card-libro.html' with imagen='img/mazerunner1.jpg' titulo='Titulo 1' sinopsis='Nulla vitae elit libero, a pharetra augue mollis interdum.' %}
+                {% include 'card-libro.html' with imagen='img/mazerunner1.jpg' titulo='Titulo 1' sinopsis='Nulla vitae elit libero, a pharetra augue mollis interdum.' %}
+            </div>
+            <!--/.First slide-->
+
+            <!--Second slide-->
+            <div class="carousel-item">
+                {% include 'card-libro.html' with imagen='img/mazerunner2.jpg' titulo='Titulo 2' sinopsis="Some quick example text to build on the card title and make up the bulk of the card's content." %}
+                {% include 'card-libro.html' with imagen='img/mazerunner2.jpg' titulo='Titulo 2' sinopsis="Some quick example text to build on the card title and make up the bulk of the card's content." %}
+                {% include 'card-libro.html' with imagen='img/mazerunner2.jpg' titulo='Titulo 2' sinopsis="Some quick example text to build on the card title and make up the bulk of the card's content." %}
+                {% include 'card-libro.html' with imagen='img/mazerunner2.jpg' titulo='Titulo 2' sinopsis="Some quick example text to build on the card title and make up the bulk of the card's content." %}
+            </div>
 
 {% endblock content %}
