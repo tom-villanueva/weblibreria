@@ -10,9 +10,14 @@ class Book(models.Model):
     ]
 
     title = models.CharField(max_length=255)
-    isbn = models.BigIntegerField()
-    sinposis = models.CharField(max_length=255)
+    isbn = models.BigIntegerField(unique=True)
+    sinopsis = models.CharField(max_length=255)
     price = models.FloatField()
     sale = models.CharField(max_length=1 ,choices=SALE_CHOICES)
+
+    class Meta():
+        constraints = [
+            models.UniqueConstraint(fields=['title', 'editorial'], name='unique title in editorial')
+        ]
     
      

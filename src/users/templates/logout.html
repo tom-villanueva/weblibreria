@@ -4,7 +4,9 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Sesión cerrada</h1>
+    <h1 class="color1 text-center">Sesión cerrada</h1>
     </br>
-    <a href="{% url 'home' %}">Inicio</a>
-{% endblock %}
+    <div class="container justify-content-center">
+        <a class="mx-auto" href="{% url 'home' %}">Inicio</a>
+    </div>    
+    {% endblock %}
