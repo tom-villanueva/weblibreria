@@ -78,7 +78,14 @@
                     <span class="fa fa-shopping-cart fa-lg"></span>
                 </a>
             </li>
-
+            {% if user.is_authenticated %}
+              <li class = "nav-item">
+                <a class="nav-link" href="#">{{user.email}}</a>
+              </li>
+              <li class = "nav-item">
+                <a class="nav-link" href="{% url 'logout' %}">Salir</a>
+              </li>
+            {% else %}
             <li class = "nav-item">
                 <a class="nav-link" href="#">Iniciar sesion</a>
             </li>
@@ -86,14 +93,16 @@
             <li class = "nav-item">
                 <a class="nav-link" href="#">Registrarse</a>
             </li>
+            {% endif %}
           </ul>
         </div>
       </div><!-- fin de los links colapsables-->
     </nav><!-- fin primer barra de navegacion-->
 
+  <div class= "container-fluid">
     {% block content %}
     {% endblock content %}
-
+  </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
