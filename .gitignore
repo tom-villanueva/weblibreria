@@ -16,3 +16,7 @@ documents/TheEyeOfMinds.log
 documents/TheEyeOfMinds.out
 documents/TheEyeOfMinds.synctex.gz
 documents/TheEyeOfMinds.toc
+
+#configuracion entorno de desarrollo
+.vscode
+
