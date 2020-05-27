@@ -10,12 +10,12 @@
                 <div class="card mx-auto w-75">
                     <img src="img/libroEjemplo.jpeg" class="card-img-top card-img-size" alt="libroEjemplo">
                     <div class="card-body">
-                        <h5 class="card-title text-capitalize font-weight-bold d-inline-block">{{ title }}</h5> 
-                        <h5 class="text-wrap float-right d-inline-block"><span class="badge badge-primary">{{ price }}</span></h5>
+                        <h5 class="card-title text-capitalize font-weight-bold d-inline-block">{{ book.title }}</h5> 
+                        <h5 class="text-wrap float-right d-inline-block"><span class="badge badge-primary">{{ book.price }}</span></h5>
                         <p><strong>Género/s: </strong>{% for genre in book.genre.all %} {{ genre }} {% endfor %}</p>
                         <p><strong>Autor/es: </strong>{% for author in book.author.all %} {{ author }} {% endfor %}</p>
                         <p><strong>Editorial: </strong>{{ editorial }}</p>
-                        <p class="card-text text-wrap text-justify">{{ sinopsis }}</p>
+                        <p class="card-text text-wrap text-justify">{{ book.sinopsis }}</p>
                         <div class="text-center">
                             <a href="#" class="btn btn-primary">Agregar al carro</a>
                         </div>
