@@ -128,3 +128,9 @@ STATIC_URL = '/static/'
 #STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# Media files
+# MEDIA_ROOT is the absolute filesystem path to the directory for user-uploaded files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL is the URL we can use in our templates for the files
+MEDIA_URL = '/media/'
