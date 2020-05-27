@@ -10,14 +10,9 @@ src/db.sqlite3
 # Python cache
 weblibreria/__pychache__
 
-# Archivos para compilación de Latex
-documents/TheEyeOfMinds.aux
-documents/TheEyeOfMinds.log
-documents/TheEyeOfMinds.out
-documents/TheEyeOfMinds.synctex.gz
-documents/TheEyeOfMinds.toc
-
 #configuracion entorno de desarrollo
 .vscode
 
 *.pyc
+# Fotos de perfil de usuarios
+src/media/users
