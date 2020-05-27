@@ -17,9 +17,9 @@ class Book(models.Model):
     sinopsis = models.CharField(max_length=255)
     price = models.FloatField()
     sale = models.CharField(max_length=1 ,choices=SALE_CHOICES)
-    #author = models.ManytoManyField(Author, on_delete=models.CASCADE)
-    #editorial = models.ForeignKey(Editorial, on_delete=models.CASCADE)
-    #genre = models.ManytoManyField(Genre, on_delete=models.CASCADE)
+    author = models.ManyToManyField(Author, on_delete=models.CASCADE)
+    editorial = models.ForeignKey(Editorial, on_delete=models.CASCADE)
+    genre = models.ManyToManyField(Genre, on_delete=models.CASCADE)
     #photo = 
 
     class Meta():
