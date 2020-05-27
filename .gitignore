@@ -20,3 +20,4 @@ documents/TheEyeOfMinds.toc
 #configuracion entorno de desarrollo
 .vscode
 
+*.pyc
