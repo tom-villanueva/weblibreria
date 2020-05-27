@@ -2,7 +2,7 @@ body {
   height: 100%!important;
   background-repeat: no-repeat;
   font-family: 'Noto Sans JP', sans-serif;
-  background-image: linear-gradient(to bottom right, #181920, #2346A0);
+  /*background-image: linear-gradient(to bottom right, #181920, #2346A0);*/
   background-size: contain;
 }
 
