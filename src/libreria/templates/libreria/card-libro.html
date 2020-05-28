@@ -1,7 +1,7 @@
 {% load static %}
 <div class="col-md-3" style="float:left">
     <div class="card mb-2">
-        <img class="card-img-top"
+        <img href="{{ url 'book-view' object.pk }}" class="card-img-top"
              src="{% static imagen %}" alt="{{ titulo }}">
         <div class="card-body">
             <h4 class="card-title">{{ titulo }}</h4>

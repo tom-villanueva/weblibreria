@@ -16,10 +16,10 @@ class Book(models.Model):
     isbn = models.BigIntegerField(unique=True)
     sinopsis = models.CharField(max_length=255)
     price = models.FloatField()
-    sale = models.CharField(max_length=1 ,choices=SALE_CHOICES)
-    #author = models.ManyToManyField(Author, on_delete=models.CASCADE)
+    sale = models.CharField(max_length=1 ,choices=SALE_CHOICES, null=True, blank=True)
+    authors = models.ManyToManyField(Author)
     editorial = models.ForeignKey(Editorial, on_delete=models.CASCADE)
-    #genre = models.ManyToManyField(Genre, on_delete=models.CASCADE)
+    genres = models.ManyToManyField(Genre)
     #photo = 
 
     class Meta():

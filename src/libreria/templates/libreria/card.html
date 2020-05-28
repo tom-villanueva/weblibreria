@@ -1,7 +1,7 @@
 {% load static %}
 <div class="carousel-item">
     <div class="container">
-        <img src="{% static imagen %}" class="d-block w-100" alt="{{ titulo }}">
+        <img href="{{ url 'book-view' object.pk }}" src="{% static imagen %}" class="d-block w-100" alt="{{ titulo }}">
             </div>
             <div class="carousel-caption d-none d-md-block">
             <h5>{{ titulo }}</h5>
