@@ -21,9 +21,14 @@
         </ol>
 
         <div class="carousel-inner">
-            {% include 'libreria/card-active.html' with imagen='img/mazerunner1.jpg' titulo='Titulo 1' sinopsis='Nulla vitae elit libero, a pharetra augue mollis interdum.' %}
-            {% include 'libreria/card.html' with imagen='img/mazerunner2.jpg' titulo='Titulo 2' sinopsis='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' %}
-            {% include 'libreria/card.html' with imagen='img/mazerunner3.jpg' titulo='Titulo 3' sinopsis='Praesent commodo cursus magna, vel scelerisque nisl consectetur.' %}
+            {% for book in book_list_sale %}
+                {% if forloop.first %}
+                    {% include 'libreria/card-active.html' with imagen='img/mazerunner1.jpg' titulo=book.title sinopsis=book.sinopsis %}
+                {% else %}              
+                    {% include 'libreria/card.html' with imagen='img/mazerunner2.jpg' titulo=book.title sinopsis=book.sinopsis %}
+                {% endif %}
+            {% endfor %}
+            
         </div><!-- fin carousel inner -->
 
         <a class="carousel-control-prev" href="#carouselOfertas" role="button" data-slide="prev">
@@ -67,19 +72,17 @@
 
             <!--First slide-->
             <div class="carousel-item active">
-                {% include 'libreria/card-libro.html' with imagen='img/mazerunner1.jpg' titulo='Titulo 1' sinopsis='Nulla vitae elit libero, a pharetra augue mollis interdum.' %}
-                {% include 'libreria/card-libro.html' with imagen='img/mazerunner1.jpg' titulo='Titulo 1' sinopsis='Nulla vitae elit libero, a pharetra augue mollis interdum.' %}
-                {% include 'libreria/card-libro.html' with imagen='img/mazerunner1.jpg' titulo='Titulo 1' sinopsis='Nulla vitae elit libero, a pharetra augue mollis interdum.' %}
-                {% include 'libreria/card-libro.html' with imagen='img/mazerunner1.jpg' titulo='Titulo 1' sinopsis='Nulla vitae elit libero, a pharetra augue mollis interdum.' %}
+                {% for book in book_list %}
+                    {% include 'libreria/card-libro.html' with imagen='img/mazerunner1.jpg' titulo=book.title sinopsis=book.sinopsis %}
+                {% endfor %}
             </div>
             <!--/.First slide-->
 
             <!--Second slide-->
             <div class="carousel-item">
-                {% include 'libreria/card-libro.html' with imagen='img/mazerunner2.jpg' titulo='Titulo 2' sinopsis="Some quick example text to build on the card title and make up the bulk of the card's content." %}
-                {% include 'libreria/card-libro.html' with imagen='img/mazerunner2.jpg' titulo='Titulo 2' sinopsis="Some quick example text to build on the card title and make up the bulk of the card's content." %}
-                {% include 'libreria/card-libro.html' with imagen='img/mazerunner2.jpg' titulo='Titulo 2' sinopsis="Some quick example text to build on the card title and make up the bulk of the card's content." %}
-                {% include 'libreria/card-libro.html' with imagen='img/mazerunner2.jpg' titulo='Titulo 2' sinopsis="Some quick example text to build on the card title and make up the bulk of the card's content." %}
+                {% for book in book_list %}
+                    {% include 'libreria/card-libro.html' with imagen='img/mazerunner2.jpg' titulo=book.title sinopsis=book.sinopsis %}
+                {% endfor %}
             </div>
 
 {% endblock content %}

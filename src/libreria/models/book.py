@@ -2,6 +2,7 @@ from django.db import models
 from .author import Author
 from .genre import Genre
 from .editorial import Editorial
+from django.urls import reverse
 
 class Book(models.Model):
 
@@ -27,6 +28,9 @@ class Book(models.Model):
         constraints = [
             models.UniqueConstraint(fields=['title', 'editorial'], name='unique title in editorial')
         ]
+
+    def get_absolute_url(self):
+        return reverse('book-view', args=[str(self.id)])
 
     def __str__(self):
         return '{0} {1}'.format(self.title, self.editorial)
