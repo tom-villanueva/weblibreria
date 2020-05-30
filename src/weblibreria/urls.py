@@ -20,5 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('libreria.urls')),
     path('users/', include('users.urls')),
-    path('carrito/<int:pk>', include('carrito.urls')),
+    path('carrito/', include('carrito.urls')),
 ]
