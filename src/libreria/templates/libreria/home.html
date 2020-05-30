@@ -73,7 +73,8 @@
             <!--First slide-->
             <div class="carousel-item active">
                 {% for book in book_list %}
-                    {% include 'libreria/card-libro.html' with imagen='img/mazerunner1.jpg' titulo=book.title sinopsis=book.sinopsis %}
+                    {% url 'book-view' book.id as detailurl %}
+                    {% include 'libreria/card-libro.html' with detailurl=detailurl imagen='img/mazerunner1.jpg' titulo=book.title sinopsis=book.sinopsis %}
                 {% endfor %}
             </div>
             <!--/.First slide-->
@@ -81,7 +82,8 @@
             <!--Second slide-->
             <div class="carousel-item">
                 {% for book in book_list %}
-                    {% include 'libreria/card-libro.html' with imagen='img/mazerunner2.jpg' titulo=book.title sinopsis=book.sinopsis %}
+                    {% url 'book-view' book.id as detailurl %}
+                    {% include 'libreria/card-libro.html' with detailurl=detailurl imagen='img/mazerunner2.jpg' titulo=book.title sinopsis=book.sinopsis %}
                 {% endfor %}
             </div>
 

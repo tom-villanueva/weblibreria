@@ -16,3 +16,4 @@ weblibreria/__pychache__
 *.pyc
 # Fotos de perfil de usuarios
 src/media/users
+src/weblibreria/__pycache__/settings.cpython-38.pyc
