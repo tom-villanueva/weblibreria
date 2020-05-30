@@ -19,8 +19,23 @@ Blog - {{ object }}
         {% endif %}
         </br>
         </br>
-        <a href="{% url 'profile-update' object.pk %}">Modificar perfil</a>
+        <h3>Roles:
+            {% if object.admin %}
+                Es Adminstrador
+            {% elif object.manager %}
+                Es Gestor
+            {% elif object.executive %}
+                Es Gerente
+            {% else  %}
+                Cliente
+            {% endif %}
+        </h3>
         </br>
-        <a href="{% url 'user-delete' object.pk %}">Eliminar cuenta</a>
+        </br>
+        {% if can_edit %}
+            <a href="{% url 'profile-update' object.pk %}">Modificar perfil</a>
+            </br>
+            <a href="{% url 'user-delete' object.user.pk %}">Eliminar cuenta</a>
+        {% endif %}
     </div>
 {% endblock %}

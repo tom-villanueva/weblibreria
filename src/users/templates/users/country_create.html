@@ -2,17 +2,17 @@
 {% load crispy_forms_tags %}
 
 {% block title %}
-    Blog - Country
+    País - Registro
 {% endblock %}
 
 {% block content %}
     <div class="container">
-        <h1>Registro</h1>
+        <h1>Agregar País</h1>
 
-        <form method="post">
+        <form method="get">
             {% csrf_token %}
             {{ form|crispy }}
-            <input type="submit" value="Registrarse" class="btn btn-primary">
+            <input type="submit" value="Agregar" class="btn btn-primary">
         </form>
     </div>
 {% endblock %}
