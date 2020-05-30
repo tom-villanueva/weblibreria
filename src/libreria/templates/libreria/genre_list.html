@@ -7,11 +7,11 @@
     <h1>Genre List</h1>
 
     {% if genre_list %}
-    <ul>
+    <ul class="list-group">
 
       {% for genre in genre_list %}
       <li>
-        <a href="#">{{ genre.genre_name }}</a>
+          <a class="list-group-item list-group-item-action" href="{% url 'book-list-view' genre.genre_name %}">{{ genre.genre_name }}</a>
       </li>
       {% endfor %}
 

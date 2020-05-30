@@ -3,3 +3,5 @@ from libreria.models.book import Book
 
 class BookListView(ListView):
     model = Book 
+
+    

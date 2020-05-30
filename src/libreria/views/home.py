@@ -1,9 +1,10 @@
 from django.shortcuts import render
 from django.views import View
 from django.views.generic.base import TemplateView
+from django.views.generic import ListView
 from libreria.models import Book 
 
-# Create your views here.
+#Create your views here.
 
 class VistaHome(TemplateView):
     template_name = 'libreria/home.html'
@@ -14,5 +15,7 @@ class VistaHome(TemplateView):
         context['book_list'] = Book.objects.all()
         context['book_list_sale'] = Book.objects.filter(sale__isnull=False)[:3]      
         return context
+
+
 
 
