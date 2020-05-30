@@ -17,7 +17,11 @@
                         <p><strong>Editorial: </strong>{{ book.editorial }}</p>
                         <p class="card-text text-wrap text-justify">{{ book.sinopsis }}</p>
                         <div class="text-center">
-                            <a href="#" class="btn btn-primary">Agregar al carro</a>
+                            <form method="post">
+                                {% csrf_token %}
+                                <!-- <a type="submit" href="#" class="btn btn-primary">Agregar al carro</a> -->
+                                <input type="submit" class="btn btn-primary" value="Agregar al carro">
+                            </form>
                         </div>
                     </div>
                 </div>
