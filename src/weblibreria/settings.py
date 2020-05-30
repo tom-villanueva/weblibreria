@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'libreria.apps.LibreriaConfig',
     'users.apps.UsersConfig',
+    'carrito.apps.CarritoConfig',
     'crispy_forms',
 ]
 
